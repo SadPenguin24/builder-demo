@@ -1,0 +1,538 @@
+{
+  "schema": {
+    "type": "object",
+    "required": ["string_2g2p6rwpk6k86g45", "select_58wzv84a244vr6gv"],
+    "properties": {
+      "react-date-picker_qx8ddmg8grmnj442": {
+        "type": "string",
+        "title": "Pickup"
+      },
+      "heading_zv3r74yxv2wb6qww": {
+        "type": "string",
+        "title": "Customer"
+      },
+      "heading_3zy5znpw987dpmw5": {
+        "type": "string",
+        "title": "Reservation"
+      },
+      "string_qxkwnejvvazy45g6": {
+        "type": "string",
+        "title": "Time",
+        "description": "",
+        "default": ""
+      },
+      "string_2g2p6rwpk6k86g45": {
+        "type": "string",
+        "title": "Name",
+        "description": "",
+        "default": ""
+      },
+      "react-date-picker_zxe4xrn4ndy889ry": {
+        "type": "string",
+        "title": "Dropoff"
+      },
+      "string_dadrm2ryy5z2yv2y": {
+        "type": "string",
+        "title": "Time",
+        "description": "",
+        "default": ""
+      },
+      "array_equipment": {
+        "type": "array",
+        "title": "Equipment",
+        "description": "(One-to-many array type, not implemented yet.)",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "properties": {
+            "react-select_abgjk3ve49byk5bx": {
+              "type": "string",
+              "title": "Equipment",
+              "enum": ["Dump Truck", "Pickup Truck", "Backhoe"]
+            },
+            "string_666qz6ej7wmm864b": {
+              "type": "number",
+              "title": "Quantity",
+              "description": "",
+              "default": ""
+            }
+          }
+        }
+      },
+      "string_xqary746v6q4g2vg": {
+        "type": "string",
+        "title": "Phone Number",
+        "description": "",
+        "default": ""
+      },
+      "string_d9jdd7w8wvnenwv9": {
+        "type": "string",
+        "title": "Address 1",
+        "description": "",
+        "default": ""
+      },
+      "string_ddz6kpwye78332y8": {
+        "type": "string",
+        "title": "Address 2",
+        "description": "",
+        "default": ""
+      },
+      "string_4dw34679mnkbnwza": {
+        "type": "string",
+        "title": "City",
+        "description": "",
+        "default": ""
+      },
+      "us-states_65rxekx9x4ggvz52": {
+        "type": "string",
+        "title": "State"
+      },
+      "string_6vyvj3aqaw7wwgqa": {
+        "type": "string",
+        "title": "Postal Code",
+        "description": "",
+        "default": ""
+      },
+      "select_58wzv84a244vr6gv": {
+        "type": "string",
+        "title": "Status",
+        "enum": ["Open", "In-process", "Filled"]
+      }
+    }
+  },
+  "uiSchema": {
+    "ui:options": {
+      "cols": {
+        "lg": 36,
+        "md": 24,
+        "sm": 6,
+        "xs": 2,
+        "xxs": 1
+      },
+      "breakpoints": {
+        "lg": 1200,
+        "md": 996,
+        "sm": 768,
+        "xs": 480,
+        "xxs": 0
+      }
+    },
+    "array_equipment": {
+      "layout": {
+        "w": 32,
+        "h": 3,
+        "x": 0,
+        "y": 2,
+        "i": "array_equipment",
+        "minW": 2,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "items": {
+        "react-select_abgjk3ve49byk5bx": {
+          "ui:widget": "ReactSelectWidget",
+          "ui:options": {
+            "isCreateable": true,
+            "isSearchable": true
+          },
+          "ui:help": "Start typing if you don't see what you want list.",
+          "fieldType": "react-select"
+        },
+        "string_666qz6ej7wmm864b": {
+          "ui:options": {
+            "inputType": "number"
+          },
+          "fieldType": "string"
+        },
+        "ui:field": "layout_grid",
+        "ui:layout_grid": {
+          "ui:row": [
+            {
+              "ui:col": {
+                "md": 8,
+                "children": ["react-select_abgjk3ve49byk5bx"]
+              }
+            },
+            {
+              "ui:col": {
+                "md": 4,
+                "children": ["string_666qz6ej7wmm864b"]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "ui:field": "layout_grid",
+    "ui:layout_grid": {
+      "ui:row": [
+        {
+          "ui:col": {
+            "md": 12,
+            "children": [
+              {
+                "ui:row": [
+                  {
+                    "ui:col": {
+                      "md": 12,
+                      "children": ["heading_3zy5znpw987dpmw5"]
+                    }
+                  }
+                ]
+              },
+              {
+                "ui:row": [
+                  {
+                    "ui:col": {
+                      "md": 4,
+                      "children": ["select_58wzv84a244vr6gv"]
+                    }
+                  },
+                  {
+                    "ui:col": {
+                      "md": 2,
+                      "children": ["react-date-picker_qx8ddmg8grmnj442"]
+                    }
+                  },
+                  {
+                    "ui:col": {
+                      "md": 2,
+                      "children": ["string_qxkwnejvvazy45g6"]
+                    }
+                  },
+                  {
+                    "ui:col": {
+                      "md": 2,
+                      "children": ["react-date-picker_zxe4xrn4ndy889ry"]
+                    }
+                  },
+                  {
+                    "ui:col": {
+                      "md": 2,
+                      "children": ["string_dadrm2ryy5z2yv2y"]
+                    }
+                  }
+                ]
+              },
+              {
+                "ui:row": [
+                  {
+                    "ui:col": {
+                      "md": 12,
+                      "children": ["array_equipment"]
+                    }
+                  }
+                ]
+              },
+              {
+                "ui:row": []
+              },
+              {
+                "ui:row": [
+                  {
+                    "ui:col": {
+                      "md": 12,
+                      "children": ["heading_zv3r74yxv2wb6qww"]
+                    }
+                  }
+                ]
+              },
+              {
+                "ui:row": [
+                  {
+                    "ui:col": {
+                      "md": 6,
+                      "children": ["string_2g2p6rwpk6k86g45"]
+                    }
+                  },
+                  {
+                    "ui:col": {
+                      "md": 6,
+                      "children": ["string_xqary746v6q4g2vg"]
+                    }
+                  }
+                ]
+              },
+              {
+                "ui:row": [
+                  {
+                    "ui:col": {
+                      "md": 3,
+                      "children": ["string_d9jdd7w8wvnenwv9"]
+                    }
+                  },
+                  {
+                    "ui:col": {
+                      "md": 3,
+                      "children": ["string_ddz6kpwye78332y8"]
+                    }
+                  },
+                  {
+                    "ui:col": {
+                      "md": 2,
+                      "children": ["string_4dw34679mnkbnwza"]
+                    }
+                  },
+                  {
+                    "ui:col": {
+                      "md": 2,
+                      "children": ["us-states_65rxekx9x4ggvz52"]
+                    }
+                  },
+                  {
+                    "ui:col": {
+                      "md": 2,
+                      "children": ["string_6vyvj3aqaw7wwgqa"]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "react-date-picker_qx8ddmg8grmnj442": {
+      "ui:widget": "ReactDatePickerWidget",
+      "layout": {
+        "w": 7,
+        "h": 1,
+        "x": 7,
+        "y": 1,
+        "i": "react-date-picker_qx8ddmg8grmnj442",
+        "minW": 3,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "react-date-picker"
+    },
+    "heading_zv3r74yxv2wb6qww": {
+      "ui:field": "HeadingField",
+      "layout": {
+        "w": 32,
+        "h": 1,
+        "x": 0,
+        "y": 5,
+        "i": "heading_zv3r74yxv2wb6qww",
+        "minW": 6,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "heading"
+    },
+    "heading_3zy5znpw987dpmw5": {
+      "ui:field": "HeadingField",
+      "layout": {
+        "w": 32,
+        "h": 1,
+        "x": 0,
+        "y": 1,
+        "i": "heading_3zy5znpw987dpmw5",
+        "minW": 6,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "heading"
+    },
+    "string_qxkwnejvvazy45g6": {
+      "ui:options": {
+        "inputType": "time"
+      },
+      "layout": {
+        "w": 6,
+        "h": 1,
+        "x": 14,
+        "y": 1,
+        "i": "string_qxkwnejvvazy45g6",
+        "minW": 1,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "string"
+    },
+    "string_2g2p6rwpk6k86g45": {
+      "ui:options": {
+        "inputType": "text"
+      },
+      "layout": {
+        "w": 12,
+        "h": 1,
+        "x": 0,
+        "y": 6,
+        "i": "string_2g2p6rwpk6k86g45",
+        "minW": 1,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "string"
+    },
+    "react-date-picker_zxe4xrn4ndy889ry": {
+      "ui:widget": "ReactDatePickerWidget",
+      "layout": {
+        "w": 6,
+        "h": 1,
+        "x": 20,
+        "y": 1,
+        "i": "react-date-picker_zxe4xrn4ndy889ry",
+        "minW": 3,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "react-date-picker"
+    },
+    "string_dadrm2ryy5z2yv2y": {
+      "ui:options": {
+        "inputType": "time"
+      },
+      "layout": {
+        "w": 6,
+        "h": 1,
+        "x": 26,
+        "y": 1,
+        "i": "string_dadrm2ryy5z2yv2y",
+        "minW": 1,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "string"
+    },
+    "string_xqary746v6q4g2vg": {
+      "ui:options": {
+        "inputType": "tel"
+      },
+      "layout": {
+        "w": 20,
+        "h": 1,
+        "x": 12,
+        "y": 6,
+        "i": "string_xqary746v6q4g2vg",
+        "minW": 1,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "string"
+    },
+    "string_d9jdd7w8wvnenwv9": {
+      "ui:options": {
+        "inputType": "text"
+      },
+      "layout": {
+        "w": 12,
+        "h": 1,
+        "x": 0,
+        "y": 7,
+        "i": "string_d9jdd7w8wvnenwv9",
+        "minW": 1,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "string"
+    },
+    "string_ddz6kpwye78332y8": {
+      "ui:options": {
+        "inputType": "text"
+      },
+      "layout": {
+        "w": 12,
+        "h": 1,
+        "x": 12,
+        "y": 7,
+        "i": "string_ddz6kpwye78332y8",
+        "minW": 1,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "string"
+    },
+    "string_4dw34679mnkbnwza": {
+      "ui:options": {
+        "inputType": "text"
+      },
+      "layout": {
+        "w": 7,
+        "h": 1,
+        "x": 0,
+        "y": 8,
+        "i": "string_4dw34679mnkbnwza",
+        "minW": 1,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "string"
+    },
+    "us-states_65rxekx9x4ggvz52": {
+      "ui:widget": "StatesWidget",
+      "layout": {
+        "w": 7,
+        "h": 1,
+        "x": 8,
+        "y": 8,
+        "i": "us-states_65rxekx9x4ggvz52",
+        "minW": 1,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "us-states"
+    },
+    "string_6vyvj3aqaw7wwgqa": {
+      "ui:options": {
+        "inputType": "text"
+      },
+      "layout": {
+        "w": 8,
+        "h": 1,
+        "x": 16,
+        "y": 8,
+        "i": "string_6vyvj3aqaw7wwgqa",
+        "minW": 1,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "string"
+    },
+    "select_58wzv84a244vr6gv": {
+      "ui:widget": "select",
+      "layout": {
+        "w": 7,
+        "h": 1,
+        "x": 0,
+        "y": 1,
+        "i": "select_58wzv84a244vr6gv",
+        "minW": 1,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "select"
+    },
+    "heading_wpabx3zwaz2yzdzp": {
+      "ui:field": "HeadingField",
+      "layout": {
+        "w": 12,
+        "h": 1,
+        "x": 0,
+        "y": 2,
+        "i": "heading_wpabx3zwaz2yzdzp",
+        "minW": 6,
+        "minH": 1,
+        "moved": false,
+        "static": false
+      },
+      "fieldType": "heading"
+    }
+  }
+}

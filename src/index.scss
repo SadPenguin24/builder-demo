@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i");
+
+body {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+article.copy {
+  p,
+  li {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+}
+
+.branding {
+  font-family: "Lato", "Heletica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: #000;
+  opacity: 0.7;
+
+  span {
+    color: #ec760b;
+    font-weight: 600;
+  }
+}
+
+.loading-spinner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  // background: url("crystal-rotating-spinner.svg") no-repeat;
+  background-position: center;
+}
+
+.loading-spinner-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 200px);
+}
+
+.form-group.field-boolean {
+  padding-top: 35px;
+}
+
+#field-settings .form-group.field-boolean {
+  padding-top: 0px;
+}
+
+.form-check {
+  // For some reason the react-jsonschema-form-bs4 library is showing the label twice.
+  & > span > span {
+    display: none;
+  }
+}
+
+.form-container {
+  height: calc(100vh - 47px);
+  // padding: 10px 0px 10px 30px;
+}
+
+.tab-content {
+  max-width: 100vw;
+}
+
+.tab-content,
+.stage-container {
+  height: 100%;
+}
+
+.title_input input {
+  font-size: 17px;
+}
+
+.formBuilder-toolbar {
+  padding: 5px 5px 0px 10px;
+  // margin-bottom: 10px;
+  background: #f3f3f3;
+}
+
+.branding-col {
+  border-bottom: #dedede 1px solid;
+}
+
+.react-grid-layout {
+  position: relative;
+}
+
+.css-class {
+  label {
+    font-size: 0.8rem;
+  }
+}
+
+.formBuilder-content {
+  max-width: 100vw;
+}
+
+#scrollContainer {
+  background-color: #f3f3f3;
+  overflow-x: auto;
+  overflow-y: auto;
+  width: 100%;
+  max-height: calc(100vh - 50px);
+}
+
+#formBuilder-sidebar {
+  padding: 20px 15px 0 inherit;
+  background-color: #fbfbfb;
+  border-right: 1px solid #dedede;
+  overflow-y: auto;
+  max-height: calc(100vh - 50px);
+  button#hideSidebarBtn {
+    background-color: #ececec;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 100%;
+    border-radius: 0;
+    z-index: 10;
+    &:hover {
+      background-color: #bbb;
+    }
+  }
+}
+
+.config-panel {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fbfbfb;
+  border-right: 1px solid #dedede;
+
+  legend {
+    font-size: 1rem;
+    background-color: rgba($color: #e5e5e5, $alpha: 0.6);
+
+    margin-bottom: 5px;
+    padding: 5px 5px;
+    border-top: 1px solid rgba($color: grey, $alpha: 0.4);
+    border-bottom: 1px solid rgba($color: grey, $alpha: 0.4);
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  input,
+  button,
+  label,
+  select {
+    font-size: 0.8rem;
+  }
+
+  .title,
+  .description,
+  .format,
+  .field-string,
+  .field-boolean {
+    padding: 0px 10px;
+  }
+
+  fieldset {
+    legend + div {
+      padding: 0px 10px;
+    }
+    legend + p {
+      padding: 0px 10px;
+    }
+
+    div > div.checkbox {
+      padding: 0px 10px;
+    }
+
+    .row {
+      margin-left: 10px;
+      padding: 0px 10px;
+    }
+  }
+
+  .checkboxes {
+    font-size: 0.8rem;
+    padding: 0px 10px;
+  }
+
+  label.control-label {
+    margin-bottom: 0.1rem;
+  }
+
+  .field-description {
+    overflow-wrap: break-word;
+    font-size: 10px;
+  }
+}
+
+#field-settings {
+  label.control-label {
+    margin-bottom: 0.1rem;
+  }
+
+  .field-array {
+    .array-item-list {
+      margin-top: 5px;
+    }
+
+    .array-item {
+      margin: 0px 0px 10px;
+      padding: 9px 8px 0px 0px;
+      border-color: #dadada;
+      background-color: #fafafa;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+
+      & > div {
+        flex-grow: 1;
+      }
+
+      .array-item-toolbox {
+        padding-top: 5px;
+        position: static;
+        flex-grow: unset;
+      }
+    }
+
+    .array-item-add {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 140px;
+      max-width: 50%;
+    }
+
+    legend {
+      font-size: 1rem;
+      background-color: rgba($color: #e5e5e5, $alpha: 0.3);
+
+      margin-bottom: 5px;
+      padding: 5px 10px;
+      border-top: 1px solid rgba($color: grey, $alpha: 0.2);
+      border-bottom: 1px solid rgba($color: grey, $alpha: 0.2);
+    }
+  }
+
+  .form-group.field-boolean {
+    padding-top: 0px;
+  }
+}
+
+.react-grid-item {
+  &:hover {
+    cursor: move;
+    background: rgba(255, 236, 140, 0.25);
+    box-shadow: 0px 0px 15px 2px rgba(255, 236, 140, 0.25);
+    .removeBtn {
+      display: inline-block;
+    }
+  }
+  .react-draggable-dragging {
+    opacity: 0.4;
+  }
+
+  &.react-grid-placeholder {
+    background: transparent;
+    border: #333 2px dashed;
+    opacity: 0.2;
+    transition-duration: 100ms;
+    z-index: 2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+
+  .removeBtn {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    &:hover {
+      background: red;
+      color: white !important;
+      cursor: pointer;
+    }
+  }
+}
+
+///// react-jsonschema-form
+
+.field-boolean,
+.field-array {
+  .checkbox {
+    input + span {
+      padding-left: 5px;
+    }
+  }
+}
+
+.array-item {
+  position: relative;
+  border: #eaeaea 1px solid;
+  margin: 0px 0px 20px;
+  padding: 30px 15px 0px;
+  background: #f9f9f9;
+
+  i.glyphicon {
+    display: none;
+  }
+  // .btn-add::after { content: 'Add'; }
+  // .array-item-move-up::after { content: 'Move Up'; }
+  // .array-item-move-down::after { content: 'Move Down'; }
+  // .array-item-remove::after { content: 'Remove'; }
+}
+
+.array-item-toolbox {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  .btn-group {
+    .btn {
+      padding: 0px;
+      border-radius: 0;
+      font-size: 12px;
+      i {
+        font-size: 9px;
+      }
+    }
+  }
+}
+
+.response-form {
+  background-color: #f3f3f3;
+  overflow-x: auto;
+  overflow-y: auto;
+
+  .rjsf {
+    padding-bottom: 150px;
+  }
+}
+
+.form-display-box {
+  border: rgb(211, 211, 211) 1px solid;
+  border-radius: 4px;
+  box-shadow: #e6e6e6 0px 0px 8px;
+  padding: 15px 15px;
+  margin: auto;
+}
+
+.form-display-boundary {
+  padding: 0px 15px;
+  margin: auto;
+  transition: width 0.5s;
+}
+
+.breakpoint-text {
+  position: sticky;
+  left: 10px;
+  top: 10px;
+  z-index: 9999;
+  width: 100px;
+  background: rgba(255, 255, 200, 0.6);
+  padding: 5px;
+}
+
+.form-display {
+  margin: 20px;
+  width: calc(100% - 40px);
+  max-height: calc(100vh - 50px);
+  overflow-y: auto;
+  background-color: #f0f0f0;
+
+  .react-grid-layout {
+    margin-bottom: 150px;
+  }
+  .bg-white {
+    margin: auto;
+  }
+}
+
+.active-field {
+  background: rgba(255, 236, 140, 0.25);
+}
+
+.add-header-container {
+  height: 50px;
+  background-color: #f9f9f9;
+  opacity: 0.4;
+  transition: height 0.5s;
+
+  &:hover {
+    height: 100px;
+    opacity: 1;
+  }
+  .add-header {
+    border: 5px dashed lightgrey;
+    height: 100%;
+  }
+}
+
+.btn-toolbar {
+  .btn-group {
+    button {
+      font-size: 1.3rem;
+      &:focus {
+        box-shadow: none;
+      }
+
+      .place-bottom {
+        padding: unset;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  fieldset#root {
+    max-height: 30vh;
+    overflow-y: auto;
+  }
+
+  #scrollContainer {
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+}

@@ -6,10 +6,16 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "ace-builds": "^1.4.12",
+    "jquery": "^3.6.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-import-script": "^0.1.0",
+    "react-jsonschema-form-builder": "./react-jsonschema-form-builder-v1.0.2.tgz",
+    "react-scripts": "^4.0.3",
+    "react-select": "^5.1.0",
+    "web-vitals": "^1.0.1",
+    "whatwg-fetch": "^3.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-react-app": "^6.0.0",
+    "nwb": "^0.25.2"
   }
 }

@@ -1,0 +1,100 @@
+{
+  "schema": {
+    "type": "object",
+    "required": ["string_2g2p6rwpk6k86g45", "select_58wzv84a244vr6gv"],
+    "properties": {
+      "string_vv2v87kv28an83bn": {
+        "type": "string",
+        "title": "Title",
+        "description": "",
+        "default": ""
+      }
+    }
+  },
+  "uiSchema": {
+    "ui:options": {
+      "cols": {
+        "lg": 36,
+        "md": 24,
+        "sm": 6,
+        "xs": 2,
+        "xxs": 1
+      },
+      "breakpoints": {
+        "lg": 1200,
+        "md": 996,
+        "sm": 768,
+        "xs": 480,
+        "xxs": 0
+      }
+    },
+    "ui:field": "layout",
+    "ui:layout_grid": {
+      "ui:row": [
+        {
+          "ui:col": {
+            "md": 12,
+            "children": [
+              {
+                "ui:row": [
+                  {
+                    "ui:col": {
+                      "children": ["null"],
+                      "md": 1,
+                      "className": "offset-md-0"
+                    }
+                  },
+                  {
+                    "ui:col": {
+                      "children": ["null"],
+                      "md": 1,
+                      "className": "offset-md--1"
+                    }
+                  }
+                ]
+              },
+              {
+                "ui:row": [
+                  {
+                    "ui:col": {
+                      "children": ["us-states_65rxekx9x4ggvz52"],
+                      "md": 2,
+                      "className": "offset-md-0"
+                    }
+                  }
+                ]
+              },
+              {
+                "ui:row": [
+                  {
+                    "ui:col": {
+                      "children": ["string_4dw34679mnkbnwza"],
+                      "md": 2,
+                      "className": "offset-md-0"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "string_vv2v87kv28an83bn": {
+      "ui:options": {
+        "inputType": "text"
+      },
+      "layout": {
+        "x": 0,
+        "y": 3,
+        "h": 1,
+        "w": 6,
+        "minH": 1,
+        "minW": 1,
+        "i": "string_vv2v87kv28an83bn",
+        "isResizeable": true
+      },
+      "fieldType": "string"
+    }
+  }
+}
